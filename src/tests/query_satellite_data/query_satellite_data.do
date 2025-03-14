@@ -32,11 +32,28 @@
 	}
     ************************
     * Run tests
-	
-    * Test basic case of the command query_satellite_data
+		
+    * Annual
     query_satellite_data, geo_dataset("gadm_410") adm_level("ADM_0") iso("ABW AFG") ///
 						  sat_dataset("blackmarble") ///
 					      date_unit("annual") date_start("2020") date_end("2023") ///
 					      file_name("~/Desktop/ntl_annual.dta")
+						  
+    * Monthly
+    query_satellite_data, geo_dataset("gadm_410") adm_level("ADM_0") iso("ABW AFG") ///
+						  sat_dataset("blackmarble") ///
+					      date_unit("monthly") date_start("2012-01") date_end("2012-03") ///
+					      file_name("~/Desktop/ntl_monthly_v1.dta")
+						  
 
-    // Add more tests here...
+    * Monthly
+    query_satellite_data, geo_dataset("gadm_410") adm_level("ADM_0") iso("ABW AFG") ///
+						  sat_dataset("blackmarble") ///
+					      date_unit("monthly") date_start("2012-01-01") date_end("2012-03-01") ///
+					      file_name("~/Desktop/ntl_monthly_v2.dta")
+
+	* Daily
+    query_satellite_data, geo_dataset("gadm_410") adm_level("ADM_0") iso("ABW AFG") ///
+						  sat_dataset("blackmarble") ///
+					      date_unit("daily") date_start("2012-01-01") date_end("2012-03-01") ///
+					      file_name("~/Desktop/ntl_daily.dta")
