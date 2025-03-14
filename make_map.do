@@ -2,8 +2,8 @@
 
 * Install packages -------------------------------------------------------------
 * net install statasat , from("https://raw.githubusercontent.com/ramarty/stata-satellite/master/src") replace
-capture ssc install geojson2dta
-capture ssc install spmap
+* capture ssc install geojson2dta
+* capture ssc install spmap
 
 * Download data ----------------------------------------------------------------
 query_satellite_data, geo_dataset("gadm_410") adm_level("ADM_1") iso("AFG") ///
@@ -11,8 +11,9 @@ query_satellite_data, geo_dataset("gadm_410") adm_level("ADM_1") iso("AFG") ///
 					  date_unit("annual") date_start("2021") date_end("2021") ///
 					  file_name("~/Desktop/afg_annual_2021.dta")
 						  
-query_geojson, geo_dataset("gadm_410") adm_level("ADM_1") iso("AFG") file_name("~/Desktop/AFG.geojson")
+query_shp, geo_dataset("gadm_410") adm_level("ADM_0") iso("AFG") dest_folder("~/Desktop")
 
+STOP
 * Make map ---------------------------------------------------------------------
 
 // Clear any existing data
