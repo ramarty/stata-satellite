@@ -3,5 +3,5 @@
 Satellite data for Stata
 
 ```stata
-net install ietoolkit , from("https://raw.githubusercontent.com/ramarty/stata-satellite/master/src") replace
+net install statasat , from("https://raw.githubusercontent.com/ramarty/stata-satellite/master/src") replace
 ```
