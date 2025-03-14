@@ -20,11 +20,13 @@ d
 *** date
 d Distribution-Date: 20250314
 *** adofiles
+f ado/query_shp.ado
 f ado/query_geojson.ado
 f ado/query_satellite_data.ado
 f ado/statasat.ado
 
 *** helpfiles
+f sthlp/query_shp.sthlp
 f sthlp/query_geojson.sthlp
 f sthlp/query_satellite_data.sthlp
 f sthlp/statasat.sthlp

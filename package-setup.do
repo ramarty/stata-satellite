@@ -26,6 +26,7 @@ if `run_ad_setup' == 1{
 * Make commands ----------------------------------------------------------------
 if `run_ad_command' == 1{
 	ad_command create query_satellite_data, adf("`myfolder'") pkg("`pkg'")
+	ad_command create query_shp, adf("`myfolder'") pkg("`pkg'")
 	ad_command create query_geojson, adf("`myfolder'") pkg("`pkg'")
 }
 
