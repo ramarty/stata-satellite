@@ -22,7 +22,7 @@ query_satellite_data, geo_dataset("gadm_410") ///
                       date_unit("annual") ///
                       date_start("2012") ///
                       date_end("2023") ///
-                      file_name("~/Desktop/afg_annual_2021.dta")
+                      file_name("~/Desktop/ntl_dataset.dta")
 ```
 
 ### Download spatial files
