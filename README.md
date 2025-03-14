@@ -17,11 +17,11 @@ net install statasat , from("https://raw.githubusercontent.com/ramarty/stata-sat
 ```stata
 query_satellite_data, geo_dataset("gadm_410") ///
                       adm_level("ADM_1") /// 
-                      iso("AFG") ///
+                      iso("AFG AGO AIA") ///
                       sat_dataset("blackmarble") /// 
                       date_unit("annual") ///
-                      date_start("2021") ///
-                      date_end("2021") ///
+                      date_start("2012") ///
+                      date_end("2023") ///
                       file_name("~/Desktop/afg_annual_2021.dta")
 ```
 
