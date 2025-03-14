@@ -1,7 +1,7 @@
 * Setup Package
 
 local run_ad_setup   0 
-local run_ad_command 0
+local run_ad_command 1
 local run_ad_publish 0
 
 * point a local to the folder where the package will be created
@@ -26,6 +26,7 @@ if `run_ad_setup' == 1{
 * Make commands ----------------------------------------------------------------
 if `run_ad_command' == 1{
 	ad_command create query_satellite_data, adf("`myfolder'") pkg("`pkg'")
+	ad_command create query_geojson, adf("`myfolder'") pkg("`pkg'")
 }
 
 if `run_ad_publish' == 1{

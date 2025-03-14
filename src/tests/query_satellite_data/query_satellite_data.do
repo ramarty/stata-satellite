@@ -57,3 +57,5 @@
 						  sat_dataset("blackmarble") ///
 					      date_unit("daily") date_start("2012-01-01") date_end("2012-03-01") ///
 					      file_name("~/Desktop/ntl_daily.dta")
+						  
+						  
