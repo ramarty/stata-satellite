@@ -27,10 +27,12 @@ The package also enables querying the spatial files used for aggregation. `query
 
 ```stata
 * Download shapefile
-query_shp, geo_dataset("gadm_410") adm_level("ADM_1") iso("AFG") file_name("~/Desktop/afg_adm1.shp")
+query_shp, geo_dataset("gadm_410") adm_level("ADM_1") iso("AFG") \\\
+           file_name("~/Desktop/afg_adm1.shp")
 
 * Download geojson
-query_geojson, geo_dataset("gadm_410") adm_level("ADM_1") iso("AFG") file_name("~/Desktop/afg_adm1.geojson")
+query_geojson, geo_dataset("gadm_410") adm_level("ADM_1") iso("AFG") \\\
+               file_name("~/Desktop/afg_adm1.geojson")
 ```
 
 ## Example: Make a map of nighttime lights
