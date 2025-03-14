@@ -1,7 +1,21 @@
-capture program drop query_satellite_data
-program define query_satellite_data
-    clear
-    syntax, geo_dataset(string) adm_level(string) sat_dataset(string) iso(string) date_unit(string) date_start(string) date_end(string) file_name(string)
+*! version 0.1 20250314 Robert Marty rmarty@worldbank.org
+
+cap program drop   query_satellite_data
+    program define query_satellite_data
+
+qui {
+
+    version 0.1
+	
+    syntax, ///
+		geo_dataset(string) ///
+		adm_level(string) ///
+		sat_dataset(string) ///
+		iso(string) ///
+		date_unit(string) ///
+		date_start(string) ///
+		date_end(string) ///
+		file_name(string)
     
     // Step 1: Create a folder based on the file_name
     local base_folder = substr("`file_name'", 1, strlen("`file_name'") - 4)
@@ -287,13 +301,6 @@ program define query_satellite_data
         display "No valid files were found or downloaded for any country. Cannot create the dataset."
         error 601
     }
+	
+}
 end
-
-
-
-
-
-
-
-
-

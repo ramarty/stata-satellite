@@ -1,0 +1,33 @@
+* This package file is generated in the adodown workflow.
+* Do not edit manually - instead, use the command ad_update in the adodown package
+*** version
+v 0.0
+*** title
+d 'STATASAT': 
+*** description
+d This package queries satellite data
+d
+*** stata
+d Requires: Stata version 0.0
+d
+*** author
+d Author: Robert Marty
+*** contact
+d Contact: rmarty@worldbank.org
+*** url
+d URL: https://github.com/lsms-worldbank/adodown
+d
+*** date
+d Distribution-Date: 20250314
+*** adofiles
+f ado/query_satellite_data.ado
+f ado/statasat.ado
+
+*** helpfiles
+f sthlp/query_satellite_data.sthlp
+f sthlp/statasat.sthlp
+
+*** ancillaryfiles
+
+*** end
+e

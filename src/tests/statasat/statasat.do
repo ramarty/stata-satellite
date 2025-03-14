@@ -32,7 +32,7 @@
     ************************
     * Run tests
 
-    * Test basic case of the command query_satellite_data
-    query_satellite_data
+    * Test basic case of the command statasat
+    statasat
 
     // Add more tests here...
