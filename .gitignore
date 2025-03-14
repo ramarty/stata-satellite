@@ -54,6 +54,7 @@
 !/**/*.md
 !src/dev/**/*.png
 !src/dev/**/*.css
+!/**/*.png
 
 ####################################
 # Ignore ssc outputs
