@@ -1,4 +1,4 @@
-net install ietoolkit , from("https://raw.githubusercontent.com/ramarty/stata-satellite/master/src") replace
+net install ietoolkit , from("https://raw.githubusercontent.com/ramarty/stata-satellite/main/src") replace
 
 query_satellite_data, geo_dataset("gadm_410") adm_level("ADM_0") iso("ABW AFG") ///
 					  sat_dataset("blackmarble") ///
