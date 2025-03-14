@@ -16,21 +16,21 @@ net install statasat , from("https://raw.githubusercontent.com/ramarty/stata-sat
 
 ```stata
 query_satellite_data, geo_dataset("gadm_410") adm_level("ADM_1") iso("AFG") ///
-	          				  sat_dataset("blackmarble") ///
-					            date_unit("annual") date_start("2021") date_end("2021") ///
-					            file_name("~/Desktop/afg_annual_2021.dta")
+                      sat_dataset("blackmarble") /// 
+                      date_unit("annual") date_start("2021") date_end("2021") ///
+                      file_name("~/Desktop/afg_annual_2021.dta")
 ```
 
 ### Download spatial files
 
-The package also enables querying the shapefile files used for aggregation.
+The package also enables querying the spatial files used for aggregation. `query_shp` can be used to download a shapefile and `query_geojson` can be used to download a geojson.
 
 ```stata
+* Download shapefile
 query_shp, geo_dataset("gadm_410") adm_level("ADM_1") iso("AFG") file_name("~/Desktop/afg_adm1.shp")
-```
 
-```stata
-query_shp, geo_dataset("gadm_410") adm_level("ADM_1") iso("AFG") file_name("~/Desktop/afg_adm1.geojson")
+* Download geojson
+query_geojson, geo_dataset("gadm_410") adm_level("ADM_1") iso("AFG") file_name("~/Desktop/afg_adm1.geojson")
 ```
 
 ## Example: Make a map of nighttime lights
