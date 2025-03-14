@@ -55,6 +55,7 @@
 !src/dev/**/*.png
 !src/dev/**/*.css
 !/**/*.png
+!/**/*.txt
 
 ####################################
 # Ignore ssc outputs
